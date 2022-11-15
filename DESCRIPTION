@@ -9,16 +9,23 @@ Authors@R: c(
 Description: Helper functions to connect to upload and download FFT data
     including comments to local database.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+Depends: 
+    R (>= 3.2.0)
 Imports: 
-    cli,
     dplyr,
     janitor,
     lubridate,
     magrittr,
-    praise,
+    pointblank,
     stringr,
     tidyr,
     utils
+Suggests: 
+    knitr,
+    praise,
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
