@@ -41,7 +41,7 @@ from the remote development using code:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("CDU-data-science-team/nottshcFFT")
+remotes::install_github("CDU-data-science-team/nottshcFFT@development")
 ```
 
 ## Loading the package
