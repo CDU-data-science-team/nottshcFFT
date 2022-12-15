@@ -21,12 +21,12 @@ used by the CDU Data Science Team.
 
 ## Installation
 
-You can install the development version of nottshcFFT from
+You can install nottshcFFT from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("Lextuga007/nottshcFFT")
+# install.packages("remotes")
+remotes::install_github("CDU-data-science-team/nottshcFFT")
 ```
 
 **You might get an error/warning/not load if you are on the VPN!**
@@ -37,7 +37,7 @@ test any new functions use `Ctrl+Shift+L` to load locally for the
 session.
 
 However, the person who is maintaining the package may want to install
-from the remote development using code:
+the development branch:
 
 ``` r
 # install.packages("remotes")
