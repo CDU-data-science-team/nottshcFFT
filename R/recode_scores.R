@@ -25,32 +25,32 @@ recode_scores <- function(data) {
     ) %>%
     dplyr::mutate(
       recoded = dplyr::case_when(
-        str_detect(
+        stringr::str_detect(
           question,
           "Did staff listen to you and treat your concerns seriously?"
         )
         == TRUE ~ "Listening",
-        str_detect(
+        stringr::str_detect(
           question,
           "Did you feel involved in making choices about your treatment and care?"
         )
         == TRUE ~ "InvCare",
-        str_detect(
+        stringr::str_detect(
           question,
           "How satisfied were you with your assessment"
         )
         == TRUE ~ "Service", # From assessment
-        str_detect(
+        stringr::str_detect(
           question,
           "Did you have confidence in your therapist and his / her skills and techniques?"
         )
         == TRUE ~ "Therapist",
-        str_detect(
+        stringr::str_detect(
           question,
           "Please use this space to tell us about your experience of our service"
         )
         == TRUE ~ "Best", # From treatment (Best was previously coded R name)
-        str_detect(
+        stringr::str_detect(
           question,
           "Please use this space to tell us about your experience of our service so far"
         )
