@@ -1,6 +1,6 @@
 Package: nottshcFFT
 Title: FFT functions to clean data from a SQL server for upload to MySQL server
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: c(
     person("Zoë", "Turner", , "cdudatascience@nottshc.nhs.uk", 
     role = c("aut", "cre"),
@@ -28,4 +28,4 @@ VignetteBuilder:
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.2
