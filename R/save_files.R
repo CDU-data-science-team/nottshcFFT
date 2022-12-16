@@ -8,13 +8,14 @@
 #'
 #' @return csv file
 #' @export
-save_files <- function(file, name_of_file) {
+save_files <- function(file,
+                       name_of_file) {
   site_dir <- "data-output/"
 
   # %m-% months(months_prev)
   file_name <- lubridate::floor_date(Sys.Date(), unit = "month")
 
-  path <- paste0(site_dir, file_name, "/", file_string, ".csv")
+  path <- paste0(site_dir, file_name, "/", name_of_file, ".csv")
 
   dir.create(dirname(path), recursive = TRUE, showWarnings = FALSE)
 
