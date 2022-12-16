@@ -12,6 +12,7 @@
 recode_scores <- function(data) {
   scores_recode <- data %>%
     janitor::clean_names() %>%
+    dplyr::mutate(addedby = "IAPT") %>%
     dplyr::select(
       "patient_id",
       "assessment_date",
