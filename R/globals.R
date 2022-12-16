@@ -21,5 +21,5 @@ utils::globalVariables(c(
   "responses",
   "n",
   # save_files.R
-  "file_string"
+  "name_of_file"
 ))
